@@ -3,20 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name — Personal Website</title>
-  <meta name="description" content="Personal website and portfolio.">
+  <meta name="color-scheme" content="only light">
+  <title>PPE &amp; Semi-Expendable Property System — CHED RO VI</title>
+  <meta name="description" content="Property system of the Commission on Higher Education Regional Office VI. For registered users only.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="seal.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="#" class="logo">YN</a>
+      <a href="#" class="brand">
+        <img src="seal.png" alt="CHED seal" width="40" height="40">
+        <span><b>PPE &amp; SME</b><small>Property System · CHED RO VI</small></span>
+      </a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       <nav>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#users">Who can use it</a></li>
+          <li><a href="#signin">How to sign in</a></li>
+          <li><a href="#verify">Verify property</a></li>
+          <li><a href="#help">Help</a></li>
+          <li><a class="btn btn-primary btn-sm js-app" href="#">Open system</a></li>
         </ul>
       </nav>
     </div>
@@ -24,60 +32,78 @@
 
   <main>
     <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Hello, I'm</p>
-        <h1>Your Name</h1>
-        <p class="tagline">A short line about what you do — e.g. student, developer, educator.</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">See my work</a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Commission on Higher Education · Regional Office VI</p>
+          <h1>PPE &amp; Semi-Expendable Property System</h1>
+          <p class="tagline">Property register, PAR / ICS and transfer documents, physical counts and COA reports, all in one place.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary btn-lg js-app">Open the Property System →</a>
+            <a href="#signin" class="btn btn-ghost btn-lg">How to sign in</a>
+          </div>
+          <p class="notice">🔒 For registered users only. Sign in with the Google account the Property Custodian registered for you.</p>
         </div>
+        <div class="hero-seal" aria-hidden="true"><img src="seal.png" alt=""></div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="users" class="section alt">
       <div class="container">
-        <h2>About</h2>
-        <p>Write a few sentences about yourself here: your background, what you're working on, and what you care about.</p>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Add more…</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="section alt">
-      <div class="container">
-        <h2>Projects</h2>
+        <h2>Who can use it</h2>
+        <p class="lead">Your access depends on the role the Property Custodian gave your account.</p>
         <div class="cards">
           <article class="card">
-            <h3>Project One</h3>
-            <p>A one-sentence description of the project and what you learned.</p>
-            <a href="#">View project →</a>
+            <span class="tag">Property Unit</span>
+            <h3>Property Custodian</h3>
+            <p>Full access: register items, issue PAR / ICS, transfers, returns, disposals, physical counts and COA submissions.</p>
           </article>
           <article class="card">
-            <h3>Project Two</h3>
-            <p>A one-sentence description of the project and what you learned.</p>
-            <a href="#">View project →</a>
+            <span class="tag tag-gold">Inventory Committee</span>
+            <h3>Count teams</h3>
+            <p>Record the physical count for the locations assigned to your team.</p>
           </article>
           <article class="card">
-            <h3>Project Three</h3>
-            <p>A one-sentence description of the project and what you learned.</p>
-            <a href="#">View project →</a>
+            <span class="tag tag-green">Accounting</span>
+            <h3>Head &amp; Staff</h3>
+            <p>Recommend cost and date changes, set useful life and depreciation, and reconcile with the General Ledger.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag-red">COA</span>
+            <h3>COA Resident</h3>
+            <p>Read-only: signed documents, released counts, final reconciliations and submitted reports.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="signin" class="section">
       <div class="container">
-        <h2>Contact</h2>
-        <p>The best way to reach me is by email or on GitHub.</p>
+        <h2>How to sign in</h2>
+        <ol class="steps">
+          <li><b>Open the system</b> with the button on this page.</li>
+          <li><b>Sign in with Google</b> using the email registered for you. CHED staff use their @ched.gov.ph account.</li>
+          <li><b>Accounting and COA, first time only:</b> type the one-time code from your invite email, then choose a 6-digit PIN.</li>
+          <li><b>Every new session:</b> enter your PIN. Never share your code or PIN.</li>
+        </ol>
+        <div class="callout">
+          <b>"Your account is not registered"?</b> You are signed in with an email the system does not know. Switch Google accounts, or ask the Property Custodian to add your email.
+        </div>
+      </div>
+    </section>
+
+    <section id="verify" class="section alt">
+      <div class="container narrow">
+        <h2>Verify a property sticker</h2>
+        <p class="lead">Every property sticker has a QR code. Scan it with your phone camera to see the item's details and whether it was verified in the latest physical count. No sign-in needed.</p>
+      </div>
+    </section>
+
+    <section id="help" class="section">
+      <div class="container narrow">
+        <h2>Need help?</h2>
+        <p class="lead">For access, PIN resets or questions about your accountability, contact the <b>Property Custodian / Supply Unit</b>, CHED Regional Office VI.</p>
         <div class="hero-actions">
-          <a href="mailto:you@example.com" class="btn btn-primary">Email me</a>
-          <a href="https://github.com/rvillaruel-web" class="btn btn-ghost">GitHub</a>
+          <a href="#" class="btn btn-primary js-app">Open the Property System →</a>
         </div>
       </div>
     </section>
@@ -85,7 +111,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Your Name</p>
+      <p>© <span id="year"></span> Commission on Higher Education · Regional Office VI · PPE &amp; Semi-Expendable Property System</p>
     </div>
   </footer>
 

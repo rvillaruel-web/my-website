@@ -1,21 +1,18 @@
-# my-website
+# CHED RO VI – Property System portal
 
-A simple personal website built with plain HTML, CSS and JavaScript. It has no build step and no dependencies.
+Landing page for the **PPE & Semi-Expendable Property System** of CHED Regional Office VI.
+It is plain HTML, CSS and JavaScript with no build step. GitHub Pages serves it from `main` / root.
+
+The system itself runs on Google Apps Script. Its own sign-in (Google account, role, and a PIN for Accounting and COA users) decides who can use it. This page only links to it.
 
 ## Files
 
-- `index.html`: the page content (edit the text marked "Your Name" and the placeholders)
-- `styles.css`: the styles, with an automatic light and dark theme
-- `script.js`: the mobile menu and the footer year
+- `index.html`: page content
+- `styles.css`: CHED blue and gold styles
+- `script.js`: the app link (`APP_URL`), mobile menu and footer year
+- `seal.png`: CHED seal
 
-## Run locally
+## Change the app link
 
-Open `index.html` in a browser.
-
-## Publish with GitHub Pages
-
-1. Push these files to the `main` branch.
-2. On GitHub, go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, then `main` and `/ (root)`, and click **Save**.
-4. After a minute the site is live at `https://rvillaruel-web.github.io/my-website/`.
-
+After a **new deployment** (a new deployment ID), edit `APP_URL` at the top of `script.js`.
+A "New version" of the same deployment keeps the same link, so it needs no change.
