@@ -18,3 +18,4 @@ Open `index.html` in a browser.
 2. On GitHub, go to **Settings → Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**, then `main` and `/ (root)`, and click **Save**.
 4. After a minute the site is live at `https://rvillaruel-web.github.io/my-website/`.
+
