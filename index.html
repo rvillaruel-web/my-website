@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Personal Website</title>
+  <meta name="description" content="Personal website and portfolio.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">YN</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Your Name</h1>
+        <p class="tagline">A short line about what you do — e.g. student, developer, educator.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>Write a few sentences about yourself here: your background, what you're working on, and what you care about.</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Add more…</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>A one-sentence description of the project and what you learned.</p>
+            <a href="#">View project →</a>
+          </article>
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>A one-sentence description of the project and what you learned.</p>
+            <a href="#">View project →</a>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>A one-sentence description of the project and what you learned.</p>
+            <a href="#">View project →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>The best way to reach me is by email or on GitHub.</p>
+        <div class="hero-actions">
+          <a href="mailto:you@example.com" class="btn btn-primary">Email me</a>
+          <a href="https://github.com/rvillaruel-web" class="btn btn-ghost">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
